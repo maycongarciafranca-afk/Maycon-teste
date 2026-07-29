@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-  header {
+  header{
     background-color: rgb(0, 6, 59);
     color: #FFFFFF;
     text-align: center;
@@ -48,6 +48,12 @@
 </body>
 <script>
   const botao = document.querySelector("button");
-  botao.addEventListener
+  botao.addEventListener("click", botaoClicado);
+
+  function botaoClicado(){
+    console.log("fui clicado");
+    let texto = botao.querySelector("span");
+    texto.textContent++;
+  }
 </script>
 </html>
